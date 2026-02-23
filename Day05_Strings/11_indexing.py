@@ -1,24 +1,28 @@
 
 #strings are indexed - position based.
 
-name = "Palak"
+lang = "Python"
 #accessing the characters by index.
-print(name[0]) #P, indexing starts from zero - access the first character.
-print(name[1]) #a
-print(name[2]) #l
-print(name[3]) #a
-print(name[4]) #k
+print(lang[0]) #P, indexing starts from zero - access the first character.
+print(lang[1]) #y
+print(lang[2]) #t
+print(lang[3]) #h
+print(lang[4]) #o
+print(lang[5]) #n
 print("\n")
-# print(name[5]) #throws an error, since index five does not exist.
+# print(lang[6]) #throws an error, since index five does not exist.
 
 #negative indexing- accessing the characters from last.
 #does not include 0 index.
 
-print(name[-5]) #P
-print(name[-4]) #a
-print(name[-3]) #l
-print(name[-2]) #a
-print(name[-1]) #k
+print(lang[-6]) #P
+print(lang[-5]) #y
+print(lang[-4]) #t
+print(lang[-3]) #h
+print(lang[-2]) #o
+print(lang[-1]) #n
+print("\n")
+
 
 intro = """Hello!, this is Palak.
 I'm learning python,
