@@ -27,10 +27,10 @@ print(is_potterhead)
 # Sequence data types : list, tuple, dict(dictionary), set
 
 #list - ordered, mutable(changeable), allows duplicate, uses [] brackets
-list = ["apple", "banana", "orange", "mango", "'apple"]
+list = ["apple", "banana", "orange", "mango", "'apple",[1, 2, 3]]
 print(list)
 
-#tuple - ordered, NOT changeable(immutable), uses () brackets
+#tuple - ordered, NOT changeable(immutable), uses () parenthesis
 tuple = ("palak", 20, "jabalpur", "pyhton",)
 print(tuple)
 
