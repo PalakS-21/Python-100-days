@@ -103,3 +103,5 @@ print(str.istitle()) #true
 #swapcase() - reverse case of the string.
 color = "Magenta"
 print(color.swapcase())
+
+print("palak".upper().title())
