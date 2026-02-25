@@ -14,3 +14,7 @@ print(fruit[:-2]) #also same
 
 print(fruit[-8:-4])
 print(fruit[-10:-5])
+
+print(fruit[::-1]) # reverse the string
+print(fruit[::2]) # [start:end:step]
+print(fruit[1:9:3])
