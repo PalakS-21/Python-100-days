@@ -17,3 +17,5 @@ print("Multiplication of " +num1+ " and " +num2+ " is : ", c)
 #Division
 d = int(num1) / int(num2)
 print("Division of " +num1+ " and " +num2+ " is : ", d)
+
+# print(type(d))

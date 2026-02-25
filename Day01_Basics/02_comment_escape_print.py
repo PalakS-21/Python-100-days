@@ -6,7 +6,7 @@ print("I am learning python")
 Python and 
 i am enjoying it.
 this is multi line comment,
- we can also use triple double quote for this'''
+we can also use triple double quote for this'''
 
 #this is escape seuence character(\n) used to move to next line
 print("Heyy, i am learning \"python\"\nand its very interesting programming lannguage,\ni am enjoying it.")

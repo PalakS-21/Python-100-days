@@ -18,4 +18,4 @@ movie = "Harry Potter"
 year = 2010
 
 print(f"My favourite movie is {movie}.\nIt was released in {year}.")
-# here, f" is formatted string
+# here, f" is formatted string3
