@@ -50,3 +50,17 @@ if correct_password == entered_password:
     print("Verified. Login Successful!")
 else:
     print("Incorrect password")
+
+# also important
+x = 0 # 0 = false
+if x:  #if bool(x)
+    ## if x executes when bool(x) is True, otherwise else executes
+    print("True")    
+else:
+    print("False")
+
+x = 1 #1=true
+if x:
+    print("yess")
+else:
+    print("noo")    
