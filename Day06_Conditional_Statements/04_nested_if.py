@@ -12,4 +12,13 @@ elif (num > 0):
         print("Number is greater than 20.")
 else:
     ("Number is Zero.")        
-3
+
+
+marks = int(input("Enter your marks : "))
+passed_exam = True
+if passed_exam:
+    print("Eligiblr for Admission.")
+    if marks >= 80:
+        print("Eligible for Scholarship.")
+else:
+    print("Not Eligible")        
