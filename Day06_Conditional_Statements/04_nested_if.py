@@ -22,3 +22,9 @@ if passed_exam:
         print("Eligible for Scholarship.")
 else:
     print("Not Eligible")        
+
+# Check 1
+#    ↓
+# If True → Check 2
+#    ↓
+# If True → Action
