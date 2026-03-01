@@ -29,6 +29,7 @@ else:
 #    ↓
 # If True → Action
 
+#checking temperature
 temperature = 30
 
 if temperature > 30:
