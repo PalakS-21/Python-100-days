@@ -28,3 +28,12 @@ else:
 # If True → Check 2
 #    ↓
 # If True → Action
+
+temperature = 30
+
+if temperature > 30:
+    print("Hot")
+elif temperature >= 30:
+    print("Warm")
+else:
+    print("Cool")
