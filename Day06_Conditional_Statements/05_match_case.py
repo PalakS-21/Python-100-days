@@ -40,3 +40,16 @@ match day:
         print("Weekend")
     case _:
         print("Weekday")    
+
+# boolean example
+y =  True         #1==True
+
+match y:
+    case 0:
+        print("False")
+    case 1:
+        print("One")
+    case True:
+        print("True")
+    case _:
+        print("Other")
