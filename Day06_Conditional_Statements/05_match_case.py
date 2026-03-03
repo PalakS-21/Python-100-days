@@ -29,4 +29,14 @@ match signal_clr:
     case "green" :
         print("GO!")
     case _:
-        print("Invalid Signal")        
+        print("Invalid Signal")    
+
+
+#matching multiple values
+day = input("Enter the day : ")
+
+match day:
+    case "Saturday" | "Sunday" :
+        print("Weekend")
+    case _:
+        print("Weekday")    
