@@ -1,5 +1,6 @@
 # match checks cases from top to bottom and stops at the first matching value.
 # match-case is a cleaner alternative to if-elif for matching fixed values.
+
 x= int(input("Enter value of x : "))
 # x is a variable to match
 match x:
@@ -16,3 +17,16 @@ match x:
         # default case -> else 
     case _:
         print("x is", x)    
+
+#Traffic signal
+
+signal_clr = "green"
+match signal_clr:
+    case "red" :
+        print("STOP")
+    case "yellow" :
+        print("WAIT")
+    case "green" :
+        print("GO!")
+    case _:
+        print("Invalid Signal")        
