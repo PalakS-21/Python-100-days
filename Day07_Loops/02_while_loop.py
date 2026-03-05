@@ -30,4 +30,5 @@ while(count < 10):
     count += 1 
 else:
     print("I am inside else.")    
-    
+
+print("outside while and else")    
