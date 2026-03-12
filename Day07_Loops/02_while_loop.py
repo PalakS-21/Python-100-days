@@ -15,6 +15,7 @@ while(count > 0) :
 
 print("\n")
 
+# decrementing while loop.
 count = 5
 while(count > 0):
     count -= 1 
