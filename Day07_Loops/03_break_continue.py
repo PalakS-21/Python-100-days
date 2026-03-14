@@ -86,3 +86,22 @@ while x < 6:
     if x == 3:
         continue
     print(x)
+
+
+# skip empty input
+for i in range(2):  #number of attempts
+    name = input("Enter your name : ")
+
+    if name == "": # empty
+        continue
+
+    print("Hello, ",name)
+
+
+for i in range(1, 12):
+    if i == 3:
+        continue
+    if i == 11:
+        break
+
+    print(i)
