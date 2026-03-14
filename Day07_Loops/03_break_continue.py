@@ -46,6 +46,16 @@ for i in numbers :
 #         print("Verified")
 #         break
 
+# guess the number game
+num = 7
+while True:
+    guess = int(input("Guess the number : "))
+    if guess == num:
+        print("Woww!! You Guessed it correct.")
+        break
+    else:
+        print("Wrong Guess!! Try again.")    
+
 #______________________________________________________________________________________
 
 # continue statement
