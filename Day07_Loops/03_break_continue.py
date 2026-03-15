@@ -97,7 +97,7 @@ for i in range(2):  #number of attempts
 
     print("Hello, ",name)
 
-
+#both break and continue together
 for i in range(1, 12):
     if i == 3:
         continue
