@@ -2,6 +2,7 @@
 # Guess the number game...in 5 attempts.
 
 secret_num = 8
+guessed = False
 
 for i in range(5): 
     guess = int(input("Guess the secret number: "))
@@ -15,5 +16,6 @@ for i in range(5):
 
     else:
         print("Too big!! 😶")    
+
 
 
