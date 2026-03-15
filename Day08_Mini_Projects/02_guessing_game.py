@@ -16,4 +16,4 @@ for i in range(5):
     else:
         print("Too big!! 😶")    
 
-print("\nNo attempts left. You have used all the 5 attempts 🫠")
+
