@@ -12,3 +12,10 @@ greet('Palak')
 greet("Harry Potter") 
 greet('Alexa')
 greet("Steve")
+
+# function with two parameters
+
+def add(a, b):
+    print("sum : ", a+b)
+add(10, 55)    
+add(5, 5)
