@@ -30,3 +30,17 @@ print(fruits[len(fruits) - 2]) # positive index
 print(fruits[4-2]) # positive index
 print(fruits[2])  # positive index
 
+# loop in list
+for fruit in fruits:
+    print(fruit)
+
+# if - else in list
+if "apple" in fruits:
+    print("Yes")
+else:
+    print("No") 
+       
+if "ppl" in "apple":
+    print("True")
+else:
+    print("False")    
