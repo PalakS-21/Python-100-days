@@ -57,3 +57,8 @@ print(nums[1:4])
 print(nums[0:6:3])
 # [starting index : last index : step index]  
 print(nums[1:7:2])
+
+# list comprehension
+
+lst = [i for i in range(11)]
+print(lst)
