@@ -39,8 +39,21 @@ if "apple" in fruits:
     print("Yes")
 else:
     print("No") 
-       
+
 if "ppl" in "apple":
     print("True")
 else:
     print("False")    
+
+# slicing 
+nums = [90, 75, 93,23, 13, 75, 32, 44]
+print(nums[:])
+print(nums[1:])
+print(nums[:4])
+print(nums[0:5])
+print(nums[1:4])    
+
+# step slicing 
+print(nums[0:6:3])
+# [starting index : last index : step index]  
+print(nums[1:7:2])
