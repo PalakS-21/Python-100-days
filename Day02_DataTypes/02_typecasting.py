@@ -5,10 +5,12 @@
 a = 5 # a converted to int
 print(a)
 print(type(a))
+
 b = 4.2 # b converted to float
 print(b)
 print(type(b))
 c =  a + b
+
 print(c) # c converted to float autoatically, as it is float addition
 print(type(c))
 
