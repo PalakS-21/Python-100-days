@@ -62,3 +62,9 @@ print(nums[1:7:2])
 
 lst = [i for i in range(11)]
 print(lst)
+
+lst = [i*i for i in range(11)]
+print(lst)
+
+lst = [i for i in range(11) if i %2==0]
+print(lst)
