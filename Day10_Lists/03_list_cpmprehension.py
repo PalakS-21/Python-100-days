@@ -31,8 +31,18 @@ for n in nums:
 
 print(even)        
 
+# real example
 names = ["ron", "steve", "harry", "john"]
 
 upper_names = [name.upper() for name in names ]
 
 print(upper_names)
+
+# if-else
+
+nums = [1,3,5,56, 55,6, 66,7, 676, 76,99]
+
+result = ["Even" if n%2==0 else "Odd" for n in nums]
+
+print(nums)
+print(result)
