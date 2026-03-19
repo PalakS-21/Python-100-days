@@ -30,3 +30,9 @@ for n in nums:
         even.append(n)
 
 print(even)        
+
+names = ["ron", "steve", "harry", "john"]
+
+upper_names = [name.upper() for name in names ]
+
+print(upper_names)
