@@ -9,3 +9,7 @@ print(tup)
 tup = (1,) # comma(,) after one element is mandatory
 print(tup)
 print(type(tup))
+
+# without comma(,) the type changes
+# example
+
