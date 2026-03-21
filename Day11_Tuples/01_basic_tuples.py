@@ -6,5 +6,6 @@ print(tup)
 
 # creating a tuple with single element
 
-tup = (1,)
+tup = (1,) # comma(,) after one element is mandatory
 print(tup)
+print(type(tup))
