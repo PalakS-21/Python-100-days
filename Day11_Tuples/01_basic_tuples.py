@@ -16,3 +16,13 @@ print(type(tup))  # tuple
 tup = (5)
 print(type(tup))  # int
 print(tup)
+
+# accessing elements 
+
+tup = (1, 3, 4, 6, 78, 8, 31)
+print(tup[0]) # 0 index
+print(tup[1])
+print(tup[2])
+print(tup[6])
+
+
