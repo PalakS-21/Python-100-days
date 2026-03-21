@@ -25,4 +25,9 @@ print(tup[1])
 print(tup[2])
 print(tup[6])
 
+# negative index
+print(tup[-1])
+print(tup[-6])          # 3
+print(tup[len(tup)-6])  # 3
+
 
