@@ -33,4 +33,18 @@ print(tup[len(tup) - 6])  # 3
 # tuple is immmutable
 
 t = (1, 2, 3, 4)
-t[0] = 0 # error
+# t[0] = 0 # error
+
+# check for item in tuple
+
+if 10 in t:
+    print("Yess, 10 is present in tuple.")
+else:
+    print("Not present!!!")
+
+
+# loop in tuple
+
+tup1 = (3, 6, 9, 12, 15)
+for t in tup1:
+    print(t)    
