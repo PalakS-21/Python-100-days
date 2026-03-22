@@ -30,4 +30,7 @@ print(tup[-1])
 print(tup[-6])          # 3
 print(tup[len(tup)-6])  # 3
 
+# tuple is immmutable
 
+t = (1, 2, 3, 4)
+t[0] = 0 # error
