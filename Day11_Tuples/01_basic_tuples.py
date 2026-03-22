@@ -48,3 +48,24 @@ else:
 tup1 = (3, 6, 9, 12, 15)
 for t in tup1:
     print(t)    
+
+
+# slicing - creates a new tuple
+
+tup = (1, 2, 45, 3, 4, 22)
+print(tup[0:5]) # from index 0 to index 4, last index is not included.
+print(tup[:4]) # blank index = 0, from starting
+print(tup[1:]) # till last index
+
+# negative slicing
+print(tup[-3:])
+
+print(tup[: : -1]) # reverse tuple
+
+print(tup[1: : 2]) # start idx : last idx : jump step
+print(tup[: : 3])
+
+# loop + slicing
+
+for t in tup[0:4]:
+    print(t)
