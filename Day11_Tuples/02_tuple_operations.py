@@ -10,6 +10,7 @@ print(tup3)
 
 # repitition(*) ->
 
-t = (2, 4)
-t2 = t * 3 # repeat 3 times
+t = (2, 4) # remains unchanged
+t2 = t * 3 # repeat 3 times, forms a new tuple
 print(t2)
+
