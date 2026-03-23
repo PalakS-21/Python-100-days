@@ -14,3 +14,7 @@ t = (2, 4) # remains unchanged
 t2 = t * 3 # repeat 3 times, forms a new tuple
 print(t2)
 
+# membership(in) ->
+
+tup = (10, 20, 30, 40, 50)
+print(30 in tup)
