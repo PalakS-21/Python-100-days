@@ -69,3 +69,42 @@ print(tup[: : 3])
 
 for t in tup[0:4]:
     print(t)
+
+# we use buit-in functions instead of methods with tuples, bcoz tuples are immutable.
+# we must first convert a tuple to a list to use methods.
+
+t = (1, 2, 3, 4)
+
+# len() function -> length of tuple
+print(len(t))
+
+# max() & min() 
+print(max(t)) # 4
+print(min(t)) # 1
+
+# sum() -> sum of all tuple elements
+print(sum(t))
+
+# sorted() -> sorts the tuple
+t = (3, 6, 1, 5, 2, 4)
+print(type(t), sorted(t)) # returns list
+
+# tuple() -> conversion
+l = [1, 2, 3]
+t = tuple(l)
+
+print(t)
+
+# tuple methods - mainly 2
+
+# count() -> counts how many timems a value appears
+t = (1, 2, 5, 44, 2, 3, 2, 1)
+print(t.count(2))
+print(t.count(3))
+
+# index() -> finds position of element
+print(t.index(3)) # index of first occurence
+print(t.index(44))
+print(t.index(2, 3, 8))
+
+# t.append(55) # error, bcoz tuples are immutable
