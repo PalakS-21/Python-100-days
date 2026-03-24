@@ -26,24 +26,48 @@ show_products()
 # Quiz App
 
 quiz = (
-    ("2 + 2 ?", "4"),
-    ("Capital of India ?", "Delhi"),
-    ("5 * 2 ?", "10")
+    ("2 + 2 ?", ("A. 3", "B. 6", "C. 5", "D. 4"), ("D")),
+    ("Capital of India ?", ("A. Delhi", "B. Mumbai","C. Pune", "D. Jaipur" ), ("A")),
 )
 
 def start_quiz():
     score = 0
+    total = len(quiz)
+
+    i = 1
 
     for q in quiz:
-        question, answer = q 
-        user = input(question + " ")
+        question, options, answer = q 
 
-        if user.lower() == answer.lower():
-            print("Correct!")
+        print("\nQuestion", i)
+        print(question)
+
+        for opt in options:
+            print(opt)
+
+        user = input("Choose the correct options (A/B/C/D) : ").upper()
+
+        if user == answer:
+            print("Correct!✅")
             score += 1
         else:
-            print("Wrong!")
+            print("Wrong!❌, Correct answer :", answer)
 
-    print("Your Score : ", score)        
+        i += 1
 
-start_quiz()        
+    print("\nFinal Score:", score, "/", total) 
+
+    percent = (score / total) * 100
+    print(f"Percentage: {percent} % ")       
+
+def main():
+    while True:
+        start_quiz()
+
+        again = input('\nDo you want to retry ? (yes/no): ').lower()
+
+        if again != "yes":       
+            print("Goodbyee!!")
+            break
+
+main()
