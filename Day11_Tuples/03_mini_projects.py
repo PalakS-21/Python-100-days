@@ -22,3 +22,28 @@ def show_products():
         print(name, "-> $", price)
 
 show_products()        
+
+# Quiz App
+
+quiz = (
+    ("2 + 2 ?", "4"),
+    ("Capital of India ?", "Delhi"),
+    ("5 * 2 ?", "10")
+)
+
+def start_quiz():
+    score = 0
+
+    for q in quiz:
+        question, answer = q 
+        user = input(question + " ")
+
+        if user.lower() == answer.lower():
+            print("Correct!")
+            score += 1
+        else:
+            print("Wrong!")
+
+    print("Your Score : ", score)        
+
+start_quiz()        
