@@ -38,6 +38,11 @@ total = 500
 
 print(f"{(score/total)*100 :.1f} %")
 
+# if value after decimal is .999, python will round it off to zero.
+
+marks  = 45.999
+print(f"{marks:.1f}")  # 46.0
+
 # dictionary / list
 
 data = ["apple", "banana"]
