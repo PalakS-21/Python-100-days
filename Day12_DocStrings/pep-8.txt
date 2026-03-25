@@ -1,0 +1,106 @@
+PEP 8 (Python Style Guide)
+
+* PEP 8 = official guidelines for writing clean and readable Python code
+
+----------------------------------------------------
+
+1. Naming Conventions
+
+Variables & Functions → snake_case
+Example:
+user_name = "Palak"
+
+def calculate_sum():
+pass
+
+Classes → PascalCase
+Example:
+class StudentData:
+pass
+
+Constants → UPPERCASE
+Example:
+MAX_VALUE = 100
+
+----------------------------------
+
+2. Spacing
+
+Use spaces around operators
+Correct:
+a = 5 + 3
+
+Wrong:
+a=5+3
+
+No extra space inside brackets
+Correct:
+func(a, b)
+
+----------------------------------
+
+3. Indentation
+
+Use 4 spaces (not tabs)
+
+Correct:
+def func():
+print("Hello")
+
+----------------------------------
+
+4. Line Length
+
+Max 79 characters per line
+
+Avoid:
+print("This is a very very very very very very very long line")
+
+----------------------------------
+
+5. Blank Lines
+
+Use blank lines to separate functions
+
+def add():
+pass
+
+def subtract():
+pass
+
+---------------------------------------
+
+6. Imports
+
+Write imports at top
+
+import math
+import random
+
+--------------------------------------
+
+7. Docstrings
+
+Use triple quotes """ """ and write at top of function
+
+def add(a, b):
+"""Returns sum of two numbers"""
+return a + b
+
+---------------------------------------
+
+8. Code Style
+
+Keep code clean and readable
+
+Bad:
+def Add(a,b): return a+b
+
+Good:
+def add(a, b):
+return a + b
+
+---------------------------------------
+
+General Rule:
+Code should be easy to read and understand
