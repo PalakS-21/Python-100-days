@@ -39,3 +39,6 @@ total = 500
 print(f"{(score/total)*100 :.1f} %")
 
 # dictionary / list
+
+data = ["apple", "banana"]
+print(f"{data[0]}")
