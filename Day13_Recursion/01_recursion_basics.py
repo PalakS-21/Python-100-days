@@ -82,6 +82,9 @@ print("\n")
 #-----------------------------
 
 # sum of numbers 1 to n
+# ex : sum of 4 = 4 + 3 + 2 + 1
+# 4 + 3 + sum(2)
+# 4 + 3 + 2 + sum(1)
 
 num = int(input("Enter any number : "))
 
