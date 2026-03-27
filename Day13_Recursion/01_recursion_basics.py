@@ -45,6 +45,49 @@ def fibbonacci(n):
     
     return fibbonacci(n-1) + fibbonacci(n - 2) # recursion
 
-print(fibbonacci.__doc__)  # docstring
 print(fibbonacci(8))
+print(fibbonacci.__doc__)  # docstring
 print("\n")
+
+#-----------------------------------------------------
+
+# sum of digits
+
+num = int(input("Enter any digit  : "))
+
+def sum_digits(num):
+    if num == 0:
+        return 0
+    else:
+        return num % 10 + sum_digits(num//10)
+
+print(f"Sum of digits in {num} = {sum_digits(num)}")    
+print("\n")
+
+#-------------------------------------------------------
+
+# reverse a string
+
+string = input("Enter a string to reverse : ")
+
+def reverse_string(string):
+    if string == "":
+        return ""
+    
+    return reverse_string(string[1 : ]) + string[0]
+
+print(reverse_string(string))
+print("\n")
+
+#-----------------------------
+
+# sum of numbers 1 to n
+
+num = int(input("Enter any number : "))
+
+def sum_num(num):
+    if num == 0:
+        return 0
+    return num + sum_num(num - 1)
+
+print(sum_num(num))
