@@ -129,3 +129,7 @@ def is_palindrome(s):
 
 print(is_palindrome.__doc__)
 print(f"Is {s} palindrome ? {is_palindrome(s)} ")
+print("\n")
+
+
+
