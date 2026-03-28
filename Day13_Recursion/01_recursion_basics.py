@@ -111,3 +111,21 @@ def count_digit(num):
     return 1 + count_digit(num // 10)
 
 print(f"No. of digits in {num} = {count_digit(num)}")
+print("\n")
+
+#---------------------------------------------
+
+# check if string is palindrome
+# palindrome string -> outputs same when read/written from left & right side
+# example :- abba, ada, malayalam
+
+s = input("Enter a string to check if palindrome : ")
+
+def is_palindrome(s):
+    """Checks if a string is palindrome or not"""
+    if len(s) <= 1:
+        return True
+    return s[0] == s[-1] and is_palindrome(s[1:-1]) 
+
+print(is_palindrome.__doc__)
+print(f"Is {s} palindrome ? {is_palindrome(s)} ")
