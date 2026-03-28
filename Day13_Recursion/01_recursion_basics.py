@@ -97,3 +97,17 @@ def sum_num(num):
     return num + sum_num(num - 1)
 
 print(sum_num(num))
+print("\n")
+
+#-------------------------------------------
+
+# count number of digits in a number
+
+num = int(input("Enter a number : "))
+
+def count_digit(num):
+    if num == 0:
+        return 0
+    return 1 + count_digit(num // 10)
+
+print(f"No. of digits in {num} = {count_digit(num)}")
