@@ -20,3 +20,13 @@ print(type(set1))  # dict
 # creating empty set
 set1 = set()
 print(type(set1))  # set
+
+#------------------------------------
+
+# accessing set elements -> loop
+
+for value in my_set:
+    print(value)
+
+for data in unorderd_set:
+    print(data)
