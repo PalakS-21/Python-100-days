@@ -4,6 +4,7 @@
 
 my_set = {1, 2, 3, 4, 2, 1}
 print(my_set)  # {1, 2, 3, 4} -> duplicate values get removed.
+print(2 in my_set)
 
 # set is unordered - no indexing
 
@@ -30,3 +31,4 @@ for value in my_set:
 
 for data in unorderd_set:
     print(data)
+
