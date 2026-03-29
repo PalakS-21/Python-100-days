@@ -131,5 +131,20 @@ print(is_palindrome.__doc__)
 print(f"Is {s} palindrome ? {is_palindrome(s)} ")
 print("\n")
 
+#-----------------------------------
 
+# counting vowels in a string
+
+str2 = input("Enter a word :")
+
+def count_vowels(str2):
+    if str2 == "":
+        return 0
+    
+    if str2[0].lower() in 'aeiou':
+        return 1 + count_vowels(str2[1:])
+    else:
+        return count_vowels(str2[1:])
+    
+print(f"no. of vowels in {str2} is : {count_vowels(str2)}") 
 
