@@ -1,21 +1,22 @@
 
 # dictionary -> ordered collection of data items
 # dictinary items are key-value pairs.
+# dictionary is mainly used to do mapping.
 
 # creating a dictionary
 
 fruit ={
     "fruit_name" :"Mango",
-    "colour" : "Yellow",
-    "price" : 60 ,
+    "fruit_colour" : "Yellow",
+    "fruit_price" : 60 ,
 }
 print(fruit)
 print("\n")
 
 # accessing values - > using keys
 print(fruit["fruit_name"])
-print(fruit["colour"])
-print(fruit["price"])
+print(fruit["fruit_colour"])
+print(fruit["fruit_price"])
 print(fruit.get("fruit_name"))
 
 # if accessing a key that is not present, it throws error
@@ -38,5 +39,27 @@ print("\n")
 
 # looping in dictionary
 
+# loop keys
 for key in fruit :
-    print(key)
+    print(key) # prints only keys
+
+print("\n")
+
+# loop in keys()
+for key in fruit.keys():
+    print(f"The {key} is {fruit[key]}.")    
+
+print("\n")
+
+# loop values
+for value in fruit.values(): 
+    print(value) # prints only values
+
+print("\n")
+
+# loop both keys, values
+for key, value in fruit.items():
+    print(key,":", value)    # iterates and give 
+
+print("\n")
+print(fruit.items()) # gives key value pairs
