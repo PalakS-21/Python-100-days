@@ -14,12 +14,12 @@ print(fruit)
 print("\n")
 
 # accessing values - > using keys
-print(fruit["fruit_name"])
-print(fruit["fruit_colour"])
-print(fruit["fruit_price"])
+print(fruit["fruit_name"]) # single
+print(fruit["fruit_colour"], fruit["fruit_price"]) # multiple
+
 print(fruit.get("fruit_name"))
 
-# if accessing a key that is not present, it throws error
+# if accessing a key using [] that is not present, it throws error
 # example
 # print(fruit["taste"]) # -> error
 
@@ -62,4 +62,10 @@ for key, value in fruit.items():
     print(key,":", value)    # iterates and give 
 
 print("\n")
-print(fruit.items()) # gives key value pairs
+print(fruit.items()) # gives (key, value) pairs
+
+print("\n")
+
+for key, value in fruit.items():
+    print(key + str(value))
+
