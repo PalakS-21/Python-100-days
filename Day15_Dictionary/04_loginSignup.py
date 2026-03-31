@@ -47,7 +47,7 @@ while True:
 
     # CHANGE PASSWORD
     elif choice == '3':
-        username = input("Enter Username :").lower()
+        username = input("\nEnter Username :").lower()
 
         if username in users : 
             old_password = input("Enter old password :") 
