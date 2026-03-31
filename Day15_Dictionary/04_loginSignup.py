@@ -25,7 +25,7 @@ while True:
 
     # LOGIN with limited attempts
     elif choice == '2':
-        username = input("Enter Username :").lower()
+        username = input("\nEnter Username :").lower()
 
         if username not in users:
             print("User not found")
