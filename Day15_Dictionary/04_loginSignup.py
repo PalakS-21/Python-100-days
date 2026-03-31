@@ -63,7 +63,7 @@ while True:
 
     # DELETE ACCOUNT
     elif choice == '4':
-        username = input("Enter Username :").lower()
+        username = input("\nEnter Username :").lower()
 
         if username in users:
             confirm = print("Are you sure you want to delete your Account ? (yes/no) :")
