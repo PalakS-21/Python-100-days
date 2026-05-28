@@ -3,14 +3,14 @@
 from encoder import encode
 from decoder import decode
 
-print("Secret Language Encoder and Decdoder")
+print("---Secret Language Encoder and Decdoder---")
 
 choice = input("Type 'e' to encode or 'd' to decode: ").lower()
 
 word = input("Enter word: ")
 
 if choice == 'e':
-    
+
     result = encode(word)
     print("Encoded word: ", result)
 
