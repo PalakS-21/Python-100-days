@@ -28,3 +28,11 @@ num = int(input("Enter a number to check positive, negaative or zero: "))
 result = "Positive" if num > 0 else "Negative" if num < 0 else "Zero"
 
 print(result)
+
+# even-odd
+
+num = int(input("Enter a number to check if it is even: "))
+
+result = "Even" if num % 2 == 0 else "Odd" if num % 2 != 0 else "Zero"
+
+print(result)
