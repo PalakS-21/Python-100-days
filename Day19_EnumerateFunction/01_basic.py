@@ -21,7 +21,7 @@ name = "Palak"
 for index, char in enumerate(name):
     print(index, char)
 
-# founding position
+# finding position
 name = "python"
 
 for index, char in enumerate(name):
@@ -33,3 +33,11 @@ students = ["Harry", "John", "Steve"]
 
 for roll, student in enumerate(students, start=1):
     print(f"Roll No {roll}: {student}")
+
+
+# Numbered Menu
+
+foods = ["Pizza", "Burger", "Pasta", "Noodles"]
+
+for i, food in enumerate(foods, start=1):
+    print(f"{i}. {food}")
