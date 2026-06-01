@@ -1,0 +1,19 @@
+Virtual Environment Commands
+
+Create:
+python -m venv venv
+
+Activate:
+venv\Scripts\activate
+
+Install package:
+pip install package_name
+
+See packages:
+pip list
+
+Save dependencies:
+pip freeze > requirements.txt
+
+Deactivate:
+deactivate
