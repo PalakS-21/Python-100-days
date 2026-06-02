@@ -16,4 +16,4 @@ Save dependencies:
 pip freeze > requirements.txt
 
 Deactivate:
-deactivate
+deactivate.
