@@ -1,0 +1,137 @@
+===============================
+IF __NAME__ == "__MAIN__"
+===============================
+
+Definition:
+-----------
+__name__ is a special built-in variable in Python.
+Python automatically creates it for every file.
+
+It stores the identity (name) of the current file/module.
+
+
+When a File is Run Directly:
+----------------------------
+python demo.py
+
+Python sets:
+
+__name__ = "__main__"
+
+Meaning:
+This file is the starting file of the program.
+
+
+When a File is Imported:
+------------------------
+import demo
+
+Python sets:
+
+__name__ = "demo"
+
+(file name without .py)
+
+
+What is "__main__"?
+-------------------
+__main__ is a special value given to the file that starts program execution.
+
+Only one file gets:
+
+__name__ = "__main__"
+
+
+Syntax:
+--------
+if __name__ == "__main__":
+    # code
+
+
+Meaning:
+---------
+Run this code only when the file is executed directly,
+not when it is imported into another file.
+
+
+Example:
+---------
+
+demo.py
+
+def greet():
+    print("Hello Palak!")
+
+if __name__ == "__main__":
+    print("Testing Function")
+    greet()
+
+
+main.py
+
+import demo
+
+print("Main File")
+demo.greet()
+
+
+Output of:
+python demo.py
+
+Testing Function
+Hello Palak!
+
+
+Output of:
+python main.py
+
+Main File
+Hello Palak!
+
+"Testing Function" is not printed because
+demo.py is imported.
+
+
+Why Do We Use It?
+-----------------
+1. Prevent unwanted code execution during imports.
+2. Keep testing code inside the same file.
+3. Improve code organization.
+4. Used in professional Python projects.
+
+
+Professional Pattern:
+----------------------
+
+def main():
+    print("Program Started")
+
+if __name__ == "__main__":
+    main()
+
+
+Quick Revision:
+----------------
+
+__name__
+↓
+Special built-in variable
+
+Run Directly
+↓
+__name__ = "__main__"
+
+Imported
+↓
+__name__ = file_name
+
+if __name__ == "__main__"
+↓
+Run code only when file is executed directly.
+
+
+Interview Answer:
+-----------------
+if __name__ == "__main__" ensures that a block of code
+runs only when the file is executed directly and not
+when it is imported as a module.
