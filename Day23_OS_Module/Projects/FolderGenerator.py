@@ -11,7 +11,6 @@ import os
 
 # deleting 100 folders (non-empty)
 
-import os
 import stat
 
 for i in range(1, 101):
