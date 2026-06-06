@@ -1,0 +1,24 @@
+LOCAL VS GLOBAL VARIABLES
+
+1. Global Variable
+   - Declared outside functions
+   - Accessible throughout the file
+
+2. Local Variable
+   - Declared inside functions
+   - Accessible only within that function
+
+3. global Keyword
+   - Used to modify a global variable inside a function
+
+4. LEGB Rule
+   L -> Local
+   E -> Enclosing
+   G -> Global
+   B -> Built-in
+
+Important:
+If Python sees:
+    x = something
+inside a function,
+it treats x as local unless 'global x' is used.
