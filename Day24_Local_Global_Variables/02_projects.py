@@ -13,6 +13,8 @@ add_marks(91)
 print("Total Marks:", total_marks)
 print("Average:", total_marks / 3)
 
+#------------------------------------------------------------------------
+
 # Bank Account
 
 balance = 100000
@@ -46,6 +48,8 @@ deposit(amount)
 
 print("Remaining Balance:", balance)
 print("\n")
+
+#------------------------------------------------------------------
 
 # Shopping Cart
 
