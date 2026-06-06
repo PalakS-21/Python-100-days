@@ -45,3 +45,17 @@ def deposit(amount):
 deposit(amount)
 
 print("Remaining Balance:", balance)
+print("\n")
+
+# Shopping Cart
+
+cart = []
+
+item = input("Enter products to add in the Cart: ")
+
+def add_item(item):
+    cart.append(item)
+
+add_item(item)
+
+print(cart)
