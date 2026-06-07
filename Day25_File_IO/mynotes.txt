@@ -1,2 +1,28 @@
 Hello World
+Append Mode 'a' -> keeps old data and appends.
+Write Mode 'w' -> erases old data.
+
 Append Mode
+Append Mode
+Append Mode
+Append Mode
+
+FILE I/O
+
+I/O = Input Output
+
+open()
+read()
+write()
+append()
+
+Modes:
+r = Read
+w = Write
+a = Append
+x = Create
+
+Best Practice:
+with open() as file
+
+Append ModePython, study daily 6 hr, practice code
