@@ -26,3 +26,5 @@ Best Practice:
 with open() as file
 
 Append ModePython, study daily 6 hr, practice code
+
+Append Modehii its palak

@@ -64,7 +64,7 @@ print(content)
 
 # notes app example
 
-note = input("Enterr note:")
+note = input("Enter note:")
 
 with open('mynotes.txt', 'a') as file:
     file.write(note + "\n")
