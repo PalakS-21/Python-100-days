@@ -13,6 +13,8 @@ add_marks(91)
 print("Total Marks:", total_marks)
 print("Average:", total_marks / 3)
 
+print("\n")
+
 #------------------------------------------------------------------------
 
 # Bank Account
