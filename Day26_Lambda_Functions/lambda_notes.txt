@@ -1,0 +1,282 @@
+==============================
+LAMBDA FUNCTION
+==============================
+
+Definition:
+A lambda function is a small anonymous function created using the lambda keyword.
+
+Syntax:
+lambda arguments : expression
+
+Examples:
+
+lambda x: x * x
+
+lambda a, b: a + b
+
+Normal Function:
+
+def square(x):
+    return x * x
+
+Lambda Function:
+
+square = lambda x: x * x
+
+print(square(5))
+
+Output:
+25
+
+Advantages:
+1. Short and concise.
+2. Useful for one-time functions.
+3. Commonly used with map(), filter(), and reduce().
+
+Limitations:
+1. Only one expression allowed.
+2. Not suitable for complex logic.
+
+==============================
+MAP FUNCTION
+==============================
+
+Definition:
+map() applies a function to every element of an iterable.
+
+Syntax:
+map(function, iterable)
+
+Returns:
+A map object.
+
+Use:
+list(map(...))
+
+Example:
+
+numbers = [1, 2, 3, 4]
+
+result = map(lambda x: x * 2, numbers)
+
+print(list(result))
+
+Output:
+[2, 4, 6, 8]
+
+How it Works:
+
+1 -> 2
+2 -> 4
+3 -> 6
+4 -> 8
+
+Important:
+map() returns transformed values.
+
+Memory:
+Many -> Many
+
+Use Cases:
+1. Convert temperatures.
+2. Increase marks.
+3. Salary increments.
+4. Modify data.
+
+==============================
+FILTER FUNCTION
+==============================
+
+Definition:
+filter() selects elements that satisfy a condition.
+
+Syntax:
+filter(function, iterable)
+
+Returns:
+A filter object.
+
+Use:
+list(filter(...))
+
+Example:
+
+numbers = [1, 2, 3, 4, 5, 6]
+
+result = filter(lambda x: x % 2 == 0, numbers)
+
+print(list(result))
+
+Output:
+[2, 4, 6]
+
+How it Works:
+
+1 -> False
+2 -> True
+3 -> False
+4 -> True
+5 -> False
+6 -> True
+
+Output:
+[2, 4, 6]
+
+Important:
+filter() returns ORIGINAL elements that pass the condition.
+
+It does NOT return:
+[False, True, False, True, False, True]
+
+Truthy Values:
+Non-zero numbers
+Non-empty strings
+Non-empty lists
+True
+
+Falsy Values:
+0
+False
+None
+''
+[]
+{}
+
+Example:
+
+names = ["Palak", "", "Rahul", ""]
+
+result = filter(None, names)
+
+Output:
+['Palak', 'Rahul']
+
+Memory:
+Many -> Few
+
+Use Cases:
+1. Even numbers.
+2. Passed students.
+3. Valid records.
+4. Remove empty values.
+
+==============================
+REDUCE FUNCTION
+==============================
+
+Definition:
+reduce() applies a function cumulatively and reduces all elements to a single value.
+
+Import:
+
+from functools import reduce
+
+Syntax:
+reduce(function, iterable)
+
+Example:
+
+from functools import reduce
+
+numbers = [1, 2, 3, 4]
+
+result = reduce(lambda x, y: x + y, numbers)
+
+print(result)
+
+Output:
+10
+
+Step-by-Step:
+
+1 + 2 = 3
+
+3 + 3 = 6
+
+6 + 4 = 10
+
+Final Result:
+10
+
+Important:
+
+x = previous result
+y = next element
+
+Example:
+
+reduce(lambda x, y: x * y, [2, 3, 4])
+
+2 * 3 = 6
+
+6 * 4 = 24
+
+Output:
+24
+
+Uses:
+1. Sum of numbers.
+2. Product of numbers.
+3. Maximum value.
+4. Minimum value.
+5. Total bill calculation.
+
+Memory:
+Many -> One
+
+==============================
+DIFFERENCE
+==============================
+
+map()
+
+Purpose:
+Modify every element.
+
+Input:
+[1, 2, 3]
+
+Output:
+[2, 4, 6]
+
+Many -> Many
+
+
+filter()
+
+Purpose:
+Keep selected elements.
+
+Input:
+[1, 2, 3, 4]
+
+Output:
+[2, 4]
+
+Many -> Few
+
+
+reduce()
+
+Purpose:
+Combine all elements.
+
+Input:
+[1, 2, 3, 4]
+
+Output:
+10
+
+Many -> One
+
+==============================
+INTERVIEW ONE-LINER
+==============================
+
+map()    -> Changes values
+filter() -> Keeps/removes values
+reduce() -> Combines values
+
+map()    -> Many -> Many
+filter() -> Many -> Few
+reduce() -> Many -> One
