@@ -44,3 +44,19 @@ print(percentage(430))
 bill = lambda units: units * 8
 
 print(bill(100))
+
+# shopping discount
+
+discount = lambda price: price - (price * 0.1)
+
+print(discount(3000))
+
+# lambda with map() function
+
+numbers = [1, 2, 3, 4, 5]
+
+# if u wanna double the numbers
+
+result = map(lambda x: x * 2, numbers)
+
+print(list(result))
