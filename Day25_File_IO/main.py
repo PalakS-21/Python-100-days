@@ -64,7 +64,54 @@ print(content)
 
 # notes app example
 
-note = input("Enter note:")
+# note = input("Enter note:")
 
-with open('mynotes.txt', 'a') as file:
-    file.write(note + "\n")
+# with open('mynotes.txt', 'a') as file:
+#     file.write(note + "\n")
+
+
+# tell() -> tells us where is the cursor right now in the file.
+
+file = open('mynotes.txt', 'r')
+
+print(file.tell()) #0 -> beacuse the cursor starts at the beginning.
+
+file.close()
+
+# after reading -> 
+
+file = open('mynotes.txt', 'r')
+
+print(file.read(25)) # reads 5 character
+
+print(file.tell())
+
+file.close()
+
+# seek() -> moves the cursor to a specific position.
+
+file = open('mynotes.txt', 'r')
+
+file.seek(6)
+
+print(file.read())
+
+file.close()
+
+# example
+
+file = open('mynotes.txt', 'r')
+
+print("cursor posiiton initially:", file.tell())
+
+print(file.read(5)) # only reads 5 character.
+
+print("Cursor postion after read(5) :", file.tell())
+
+print(file.seek(0))
+
+file.seek(0) # moves cursor back to position 0.
+
+print("Cursor position after seek(0) :",file.tell())
+
+file.close()
