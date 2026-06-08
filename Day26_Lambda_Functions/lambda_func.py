@@ -26,3 +26,21 @@ print(add(5, 4))
 max = lambda a, b: a if a > b else b
 
 print(max(55, 8))
+
+# even, odd
+
+is_even = lambda x: x % 2 == 0
+
+print(is_even(8))
+
+# student percentage
+
+percentage = lambda marks: marks / 500 * 100
+
+print(percentage(430))
+
+# Electricity bill
+
+bill = lambda units: units * 8
+
+print(bill(100))
