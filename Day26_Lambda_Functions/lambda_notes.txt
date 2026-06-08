@@ -270,7 +270,7 @@ Output:
 Many -> One
 
 ==============================
-INTERVIEW ONE-LINER
+ONE-LINER
 ==============================
 
 map()    -> Changes values
