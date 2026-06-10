@@ -1,4 +1,4 @@
-# is(identity operator) vs == (equality operator)
+# is (identity operator) vs == (equality operator)
 
 a = 10
 b = 10
