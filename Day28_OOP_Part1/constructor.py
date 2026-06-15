@@ -2,7 +2,7 @@
 
 class Student:
 
-    def __init__(self):
+    def __init__(self):  # initialization
         print("Student object created")
 
 
