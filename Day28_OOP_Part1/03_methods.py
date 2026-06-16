@@ -41,3 +41,13 @@ account = BankAccount(100000)
 
 account.show_balance()
 
+# calculator
+
+class Calculator:
+
+    def add(self, a, b):
+        print(a + b)
+
+c1 = Calculator()
+
+c1.add(30, 80)
