@@ -38,3 +38,36 @@ e2 = Programmer("Steve", 864)
 e2.showDetails()
 
 e2.showLanguage()
+
+#--------------------------------------------------
+
+class Person:
+
+    def __init__(self):
+        print("Person")
+
+class Student(Person):
+    
+    def __init__(self):
+        print("Student")
+
+s1 = Student()
+
+# Child has constructor -> Only Child constructor runs
+
+# Child has NO constructor -> Parent constructor runs
+
+# we use super().__init__ -> to work both constructor
+
+class Person:
+
+    def __init__(self):
+        print("Person Constructor")
+
+class Student(Person):
+    
+    def __init__(self):
+        super().__init__()
+        print("Student Constructor")
+
+s1 = Student()
