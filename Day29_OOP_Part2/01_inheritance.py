@@ -53,9 +53,9 @@ class Student(Person):
 
 s1 = Student()
 
-# Child has constructor -> Only Child constructor runs
+# If Child has constructor -> Only Child constructor runs
 
-# Child has NO constructor -> Parent constructor runs
+# If Child has NO constructor -> Parent constructor runs
 
 # we use super().__init__ -> to work both constructor
 
