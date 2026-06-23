@@ -17,3 +17,24 @@ d1.eat()
 d1.sleep()
 d1.bark()
 
+#-----------------------------------------------------------
+
+class Employee:
+    def __init__(self, name, id):
+        self.name = name
+        self.id = id
+
+    def showDetails(self):
+        print(f"The name of Employee: {self.id} is {self.name}")
+
+class Programmer(Employee):
+    def showLanguage(Self):
+        print("The default language is Python.")
+
+e1 = Employee("Rosh", 432)
+e1.showDetails()
+
+e2 = Programmer("Steve", 864)
+e2.showDetails()
+
+e2.showLanguage()
