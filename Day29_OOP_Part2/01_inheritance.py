@@ -185,3 +185,31 @@ e1 = Employee()
 
 s1.introduce()
 e1.introduce()
+
+#-----------------------------------------------------------
+
+# 5. HYBRID INHERITANCE -> Combination of two or more inheritance types.
+
+class Person:
+
+    def introduce(Self):
+        print("I am a person")
+
+class Student(Person):
+
+    def study(self):
+        print("Studyingg")
+
+class Employee(Person):
+
+    def work(Self):
+        print("Working")
+
+class TeachingAssistant(Student, Employee):
+    pass
+
+ta = TeachingAssistant()
+
+ta.introduce()
+ta.study()
+ta.work()
