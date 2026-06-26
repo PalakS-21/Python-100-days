@@ -71,3 +71,20 @@ class Student(Person):
         print("Student Constructor")
 
 s1 = Student()
+
+#-----------------------------------------------------------------
+
+# METHOD OVERRIDING
+
+# Parent and Child have methods with the same name.
+# Child's method replaces (overrides) the Parent's method.
+
+class Parent:
+
+    def method(self):
+        pass
+
+class Child(Parent):
+
+    def method(self):    # method name is same
+        pass
