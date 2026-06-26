@@ -108,3 +108,41 @@ class Cat(Animal):
 
 c1 = Cat()
 c1.sound()
+
+#-----------------------------------------------------------------------------
+
+# INHERITANCE TYPES :-
+
+# 1. SINGLE INHERITANCE -> A child class inherits from one parent class.
+
+class Person:
+
+    def introduce(self):
+        print("I am a Person.")
+
+class Student(Person):
+    pass
+
+s1 = Student()
+s1.introduce()
+
+#------------------------------------------------------------
+
+# 2. MULTILEVEL INHERITANCE -> A child inherits from another child.
+
+class Person:
+    
+    def introduce(self):
+        print("I am a Person.")
+
+class Employee(Person):
+    pass
+
+class Manager(Employee):
+    pass
+
+m1 = Manager()
+m1.introduce()
+
+#-----------------------------------------------------------
+
