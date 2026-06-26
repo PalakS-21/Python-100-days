@@ -79,12 +79,32 @@ s1 = Student()
 # Parent and Child have methods with the same name.
 # Child's method replaces (overrides) the Parent's method.
 
-class Parent:
+class Animal:
 
-    def method(self):
-        pass
+    def sound(self):
+        print("Animal makes a sound.")
 
-class Child(Parent):
+class Dog(Animal):
 
-    def method(self):    # method name is same
-        pass
+    def sound(self):    # method name is same -> overriding
+        super().sound() # super() is used to call the parent's method.
+        print("Dog barks!!")
+
+d1 = Dog()
+d1.sound()
+
+# a1 = Animal()
+# a1.sound()
+
+# if child doesn't override, then python uses parent's method
+
+class Animal:
+
+    def sound(self):
+        print("Animal makes a sound 2")
+    
+class Cat(Animal):
+    pass
+
+c1 = Cat()
+c1.sound()
