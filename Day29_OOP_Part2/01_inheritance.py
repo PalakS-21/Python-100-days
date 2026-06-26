@@ -146,7 +146,7 @@ m1.introduce()
 
 #-----------------------------------------------------------
 
-# 3.MULTIPLE INHERITANCE -> One child inherits from two parents.
+# 3. MULTIPLE INHERITANCE -> One child inherits from two parents.
 
 class Teacher:  # parent
 
@@ -167,3 +167,21 @@ m1.sing()
 
 #---------------------------------------------------------------------
 
+# 4. HIERARCHICAL INHERITANCE -> One parent has multiple children.
+
+class Person:
+
+    def introduce(Self):
+        print("I am a Person")
+
+class Student(Person):
+    pass
+
+class Employee(Person):
+    pass
+
+s1 = Student()
+e1 = Employee()
+
+s1.introduce()
+e1.introduce()
