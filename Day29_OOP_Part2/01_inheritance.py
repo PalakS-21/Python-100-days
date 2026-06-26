@@ -213,3 +213,21 @@ ta = TeachingAssistant()
 ta.introduce()
 ta.study()
 ta.work()
+
+#------------------------------------------------
+
+# isinstance(object, class) -> Is this object an instance of this class?
+# issubclass(child, parent) -> Is this class derived from another class?
+
+class Person:
+    pass
+
+class Student(Person):
+    pass
+
+s1 = Student()
+
+print(isinstance(s1, Student))  # True
+print(isinstance(s1, Person))    # True
+
+print(issubclass(Student, Person))    # True
