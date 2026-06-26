@@ -146,3 +146,24 @@ m1.introduce()
 
 #-----------------------------------------------------------
 
+# 3.MULTIPLE INHERITANCE -> One child inherits from two parents.
+
+class Teacher:  # parent
+
+    def teach(self):
+        print("Teaching")
+
+class Singer:   # child
+    
+    def sing(self):
+        print("Singing")
+
+class MusicTeacher(Teacher, Singer):
+    pass
+
+m1 = MusicTeacher()
+m1.teach()
+m1.sing()
+
+#---------------------------------------------------------------------
+
