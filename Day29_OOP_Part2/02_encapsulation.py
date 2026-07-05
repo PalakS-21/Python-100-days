@@ -33,4 +33,56 @@ s1 = Student()
 print(s1._name)
 
 
-# 3. PRIVATE -> private member 
+# 3. PRIVATE -> private member is intended to be accessed only its own class.
+# it is created using double underscore(__)
+
+class Student:
+
+    def __init__(self):
+        self.__name = "Private Member"
+
+s1 = Student()
+
+# print(s1.__name) # gives AttributeError
+
+# accessed using Name Mangling
+# Python changes the name to discourage direct access and prevent accidental conflicts.
+
+print(s1._Student__name)
+
+# getter -> a method used to read or get the value of a private variable.
+
+class Student:
+
+    def __init__(self):
+        self.__age = 20
+
+    def get_age(self):
+       return self.__age 
+    
+s1 = Student()
+
+print(s1.get_age())
+
+# setter -> used to change or set the value of a private variable.
+
+class Student:
+
+    def __init__(self):
+        self.__age = 21
+
+    def set_age(self, age):
+
+        if age >= 0:
+            self.__age = age
+        else:
+            print("Invalid Age")
+
+    def get_age(self):
+        return self.__age
+
+s1 = Student()
+
+s1.set_age(25)
+
+print(s1.get_age())
