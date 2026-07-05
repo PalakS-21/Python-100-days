@@ -19,9 +19,9 @@ s1 = Student()
 print(s1.name)
 
 
-# 2. PROTECTED -> protected member is intended to be used inside the class and by its child classes.
+# 2. PROTECTED -> protected member is intended to be used inside the class and by its child classes, still accessible from outside.
 # it is created using one underscore(_), example : self._name
-# Protected is NOT enforced.
+# Protected is NOT enforced i n python. Protected = Convention.
 
 class Student:
 
@@ -31,3 +31,6 @@ class Student:
 s1 = Student()
 
 print(s1._name)
+
+
+# 3. PRIVATE -> private member 
