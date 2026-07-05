@@ -19,3 +19,15 @@ s1 = Student()
 print(s1.name)
 
 
+# 2. PROTECTED -> protected member is intended to be used inside the class and by its child classes.
+# it is created using one underscore(_), example : self._name
+# Protected is NOT enforced.
+
+class Student:
+
+    def __init__(self):
+        self._name = "Protected Member"
+
+s1 = Student()
+
+print(s1._name)
