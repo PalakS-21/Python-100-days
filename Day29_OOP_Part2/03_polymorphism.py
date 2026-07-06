@@ -24,7 +24,7 @@ class Calculator:
     def add(Self, a, b):
         print(a + b)
 
-    def add(self, a, b, c):
+    def add(self, a, b, c):  # if method name is same, replace the old one and keep the new one
         print(a + b + c)
  
 c1 = Calculator()
