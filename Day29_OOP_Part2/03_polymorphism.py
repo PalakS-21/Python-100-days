@@ -57,3 +57,38 @@ c3.add(11, 11)
 c3.add(5, 5, 5)
 
 c3.add(60, 40, 100, 55)
+
+# DUCK TYPING -> Python cares about what an object can DO, not what type it IS.
+# Python checks Behavior, not Type.
+
+class Dog:
+
+    def speak(self):
+        print("Bark!")
+
+class Cat:
+
+    def speak(self):
+        print("Meoww!")
+
+def make_sound(animal):
+    animal.speak()
+
+d1 = Dog()
+
+c1 = Cat()
+
+make_sound(d1)
+
+make_sound(c1)
+
+# if method doesn't exist then,..
+
+class Car:
+
+    def drive(self):
+        print("Driving")
+
+c1 = Car()
+
+# make_sound(c1) # 'Car' object has no attribute 'speak'
