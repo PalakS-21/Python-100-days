@@ -4,6 +4,7 @@
 
 # 1. __str__()
 # __str__() converts/represents object as text.
+# user-friendly representation
 
 # without __str__()
 class Student:
@@ -29,3 +30,22 @@ s1 = Student("Harry Potter", 14)
 
 print(s1)
 
+# 2. __repr__()
+# __repr__() is about representing an object, but its purpose is slightly different
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age= age
+
+    def __str__(self):
+        return f"{self.name}, {self.age}"
+
+    # __repr__()
+    def __repr__(self):
+        return f"Student('{self.name}', {self.age})"
+
+s1 = Student("Harry Potter", 14)
+
+print(s1)
+print(repr(s1))
