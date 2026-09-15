@@ -47,5 +47,19 @@ class Student:
 
 s1 = Student("Harry Potter", 14)
 
-print(s1)
+# print(s1)
 print(repr(s1))
+
+# __len__()
+# len(object) is returned.
+
+class Team:
+    def __init__(self, players):
+        self.players = players
+
+    def __len__(self):
+        return len(self.players)
+
+t1 = Team(["A", "B", "C", "D"])
+
+print(len(t1))
