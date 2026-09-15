@@ -91,3 +91,36 @@ e1 = Employee("Harry Potter", 18)
 e2 = Employee("Harry Potter", 18)
 
 print(e1==e2)
+
+
+# __lt__()
+# less than
+class Employee:
+    def __init__(self, name, age):
+        self.name = name
+        self.age =age
+
+    def __lt__(self, other):
+        return self.age < other.age and self.name < other.name
+
+
+e1 = Employee("Harry Potter", 38)
+e2 = Employee("Ron Weasley", 28)
+
+print(e1 < e2)
+
+# __gt__()
+# greater than -> gt
+class Employee:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __gt__(self, other):
+        return self.age > other.age
+
+
+e1 = Employee("Harry", 18)
+e2 = Employee("Ron", 20)
+
+print(e1 > e2)
