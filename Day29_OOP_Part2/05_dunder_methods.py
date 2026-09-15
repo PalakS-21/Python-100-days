@@ -63,3 +63,30 @@ class Team:
 t1 = Team(["A", "B", "C", "D"])
 
 print(len(t1))
+
+
+# __add__()
+class Money:
+    def __init__(self, amount):
+        self.amount = amount
+
+    def __add__(self, other):
+        return self.amount + other.amount
+
+m1 = Money(300)
+m2 = Money(600)
+
+print(m1 + m2)
+
+# __eq__()
+class Employee:
+    def __init__(self, name):
+        self.name = name
+
+    def __eq__(self, other):
+        return self.name == other.name
+
+e1 = Employee("Harry Potter")
+e2 = Employee("Harry Potter")
+
+print(e1==e2)
