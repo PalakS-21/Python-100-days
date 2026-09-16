@@ -166,3 +166,16 @@ m1 = Money(30)
 m2 = Money(6)
 
 print(m1 * m2)
+
+# __truediv__() -> / (division)
+class Money:
+    def __init__(self, amount):
+        self.amount = amount
+
+    def __truediv__(self, other):
+        return self.amount / other.amount
+
+m1 = Money(55000)
+m2 = Money(500)
+
+print(m1/m2)
