@@ -124,3 +124,17 @@ e1 = Employee("Harry", 18)
 e2 = Employee("Ron", 20)
 
 print(e1 > e2)
+
+# __ne__()
+# ne -> not equal
+class value:
+    def __init__(self, number):
+        self.number = number
+
+    def __ne__(self, other):
+        return self.number != other.number
+
+v1 = value(45)
+v2 = value(65)
+
+print(v1 != v2)
