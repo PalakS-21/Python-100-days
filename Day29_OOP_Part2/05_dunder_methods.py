@@ -138,3 +138,17 @@ v1 = value(45)
 v2 = value(65)
 
 print(v1 != v2)
+
+# __sub__()
+# sub -> subtraction
+class Money:
+    def __init__(self, amount):
+        self.amount = amount
+
+    def __sub__(self, other):
+        return self.amount - other.amount
+
+m1 = Money(3300)
+m2 = Money(600)
+
+print(m1 - m2)
