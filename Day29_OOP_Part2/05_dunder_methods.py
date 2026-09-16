@@ -179,3 +179,24 @@ m1 = Money(55000)
 m2 = Money(500)
 
 print(m1/m2)
+
+print("\n")
+
+# practice
+class Product:
+    def __init__(self, price):
+        self.price = price
+
+    def __add__(self, other):
+        return self.price + other.price
+
+    def __eq__(self, other):
+        return self.price == other.price
+
+p1 = Product(300)
+p2 = Product(250)
+p3 = Product(450)
+
+print(p1 + p2)
+print(p1 == p2)
+print(p2 == p3)
