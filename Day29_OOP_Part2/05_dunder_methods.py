@@ -152,3 +152,17 @@ m1 = Money(3300)
 m2 = Money(600)
 
 print(m1 - m2)
+
+# __mul__()
+# multiplication
+class Money:
+    def __init__(self, amount):
+        self.amount = amount
+
+    def __mul__(self, other):
+        return self.amount * other.amount
+
+m1 = Money(30)
+m2 = Money(6)
+
+print(m1 * m2)
