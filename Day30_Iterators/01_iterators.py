@@ -33,6 +33,7 @@ iterator = iter(nums) # iterator is the object that gives you the values one by 
 
 print(type(iterator))
 
+
 # creating our own iterator using two dunder methods.
 class MyNumbers:
 
