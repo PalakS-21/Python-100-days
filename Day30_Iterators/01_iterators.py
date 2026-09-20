@@ -10,7 +10,7 @@ print(next(my_iter)) #10
 print(next(my_iter)) #20
 print(next(my_iter)) #30
 print(next(my_iter)) #40
-print(next(my_iter)) #StopIteration 
+# print(next(my_iter)) #StopIteration 
 
 
 # basically, iter() acts as a pointer, that points at the first number/element, and then moves to next element sequentially.
@@ -23,3 +23,12 @@ print("\n")
 
 for num in numbers:
     print(num)
+
+# iterable and iterator
+nums = [11, 22, 33, 44, 55] # iterable -> something u can loop forever. list, tuples, strings, sets, dictionaries etc.
+
+print(type(nums))
+
+iterator = iter(nums) # iterator is the object that gives you the values one by one.
+
+print(type(iterator))
