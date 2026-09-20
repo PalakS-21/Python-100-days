@@ -32,3 +32,24 @@ print(type(nums))
 iterator = iter(nums) # iterator is the object that gives you the values one by one.
 
 print(type(iterator))
+
+# creating our own iterator using two dunder methods.
+class MyNumbers:
+
+    def __iter__(self):
+        self.num = 1
+        return self
+
+    def __next__(self):
+        current = self.num
+        self.num += 1
+        return current
+
+numbers = MyNumbers()
+
+my_iter = iter(numbers)
+
+print(next(my_iter))
+print(next(my_iter))
+print(next(my_iter))
+print(next(my_iter))
