@@ -34,7 +34,35 @@ iterator = iter(nums) # iterator is the object that gives you the values one by 
 print(type(iterator))
 
 
-# creating our own iterator using two dunder methods.
+# creating our own iterator using two dunder methods.\
+
+# class MyNumbers:
+
+#     def __iter__(self):
+#         self.num = 1
+#         return self
+
+#     def __next__(self):
+#         if self.num <= 5:
+#             current = self.num
+#             self.num += 1
+#             return current
+#         else:
+#             raise StopIteration
+        
+# numbers = MyNumbers()
+
+# my_iter = iter(numbers)
+
+# print(next(my_iter))
+# print(next(my_iter))
+# print(next(my_iter))
+# print(next(my_iter))
+# print(next(my_iter))
+# print(next(my_iter)) # stopiteration
+
+# with for loop connection
+
 class MyNumbers:
 
     def __iter__(self):
@@ -42,15 +70,16 @@ class MyNumbers:
         return self
 
     def __next__(self):
-        current = self.num
-        self.num += 1
-        return current
+        if self.num <= limit:
+            current = self.num
+            self.num += 1
+            return current
+        else:
+            raise StopIteration
 
+limit = int(input("Enter the limit: "))
+        
 numbers = MyNumbers()
 
-my_iter = iter(numbers)
-
-print(next(my_iter))
-print(next(my_iter))
-print(next(my_iter))
-print(next(my_iter))
+for num in numbers:
+    print(num)
