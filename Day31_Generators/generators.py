@@ -12,3 +12,18 @@ print(next(x)) # resumes from where it paused.
 # print(next(x)) # stopiteration
 
 # Every generator is an iterator, but not every iterator is a generator.
+
+
+
+# mainly used to use memory efficiently.
+numbers = list(range(1, 100001)) # stores all 100,000 numbers in memory.
+
+def numbers():
+    for i in range(1, 100001): # only needed value is produced at that moment.
+        yield i
+
+x = numbers()
+
+print(next(x))
+print(next(x))
+print(next(x))
