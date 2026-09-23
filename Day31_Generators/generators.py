@@ -27,3 +27,57 @@ x = numbers()
 print(next(x))
 print(next(x))
 print(next(x))
+
+
+# Generator Expressions -> used for something simple, u can write in one line.
+
+# list expression -> []
+numbers = [x * 2 for x in range(5)]
+print(numbers)
+print("\n")
+
+# generator expression -> ()
+numbers = (x * 2 for x in range(5))
+print(numbers)
+ # it doen't print actual numbers, it gives us generator object
+
+print(next(numbers))
+print(next(numbers))
+print(next(numbers))
+print(next(numbers))
+
+print(type(x))
+
+x = (i * 3 for i in range(5))
+
+print(next(x))
+print(next(x))
+print("After next...")
+
+for n in x:
+    print(n) # it continues from where it left, it does not restart
+
+# GENERATOR FUNCTION -> use when u have multiple steps or some logic.
+
+# Generate numbers on demand.
+def numbers(n):
+    for i in range(1, n + 1):
+        yield i
+        # yield i * i
+
+n = int(input("How many numbers? "))
+
+for number in numbers(n):
+    print(number)
+
+
+
+def even_numbers(n):
+    for i in range(1, n + 1):
+        if i % 2 == 0:
+            yield i
+
+n = int(input("Enter number: "))
+
+for number in even_numbers(n):
+    print(number)
