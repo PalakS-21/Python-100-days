@@ -81,3 +81,27 @@ n = int(input("Enter number: "))
 
 for number in even_numbers(n):
     print(number)
+
+#------------------------------------------------------------------
+
+# yield from -> yield each value from the iterable one by one.
+def numbers():
+    yield from [10, 15, 20, 25, 30]
+
+for number in numbers():
+        print(number)
+
+#---------------------------------------------------------------
+
+def fruits():
+    yield "Apple"
+    yield "Banana"
+    yield "Mango"
+
+def all_items():
+    yield from fruits()
+    yield "Milk"
+    yield "Bread"
+
+for item in all_items():
+    print(item)
