@@ -1,0 +1,25 @@
+# GENERATORS IN PYTHON
+
+* A generator is a function that produces values one at a time using `yield`.
+* `yield` gives a value and pauses the function; execution resumes from the same point.
+* Calling a generator function creates a generator object; the function does not run immediately.
+* `next()` resumes the generator and returns the next value.
+* When no values are left, `StopIteration` occurs.
+* `for` loop automatically calls `next()` and handles `StopIteration`.
+* Generators remember their state and are memory-efficient because of lazy evaluation.
+* Generator expression: `(x for x in range(5))`
+* `yield from` yields values from another iterable/generator.
+* `send()` resumes a paused generator and sends a value into `yield`.
+
+Example:
+def numbers():
+yield 1
+yield 2
+yield 3
+
+g = numbers()
+print(next(g))    # 1
+print(next(g))    # 2
+
+Key point:
+Every generator is an iterator, but not every iterator is a generator.

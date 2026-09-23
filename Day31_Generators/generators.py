@@ -105,3 +105,30 @@ def all_items():
 
 for item in all_items():
     print(item)
+
+#______________________________________________________________
+def test():
+    print("Generator started")
+
+    x = yield
+
+    print("Received:", x)
+
+g = test() # generator is created.
+
+next(g)
+
+try:
+    g.send(100) #100 goes to the paused yield, so x = 100.
+except StopIteration:
+    print("Generator Finished")
+
+
+# example ->  reading a large file line by line]
+def read_file(filename):
+    with open(filename, "r") as file:
+        for line in file:
+            yield line.strip()
+
+for line in read_file("Day31_Generators/notes.txt"):
+    print(line)
