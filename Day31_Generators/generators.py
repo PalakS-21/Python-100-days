@@ -132,3 +132,14 @@ def read_file(filename):
 
 for line in read_file("Day31_Generators/notes.txt"):
     print(line)
+
+# return inside a generator
+def test():
+    yield 10
+    yield 20
+    return # completely ends the generator.
+
+    yield 30 # doesn;t print
+
+for x in test():
+    print(x)
