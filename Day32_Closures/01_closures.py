@@ -15,3 +15,17 @@ my_function = outer()
 
 # my_function now refers to inner()
 my_function()
+
+# example -> creating customized function
+def discount(discount_percent):
+
+    def calculate(price):
+        return price - (price * discount_percent / 100)
+
+    return calculate
+
+student_discount = discount(10)
+festive_discount = discount(20)
+
+print(student_discount(1000))
+print(festive_discount(1000))
