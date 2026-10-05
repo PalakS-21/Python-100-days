@@ -23,3 +23,19 @@ marks = [88, 79, 80]
 for name, mark in zip(names, marks):
     print(name, mark)
     print(f"{name} scored {mark} marks.")
+
+# zip() with list, tuple
+names = ["Patrick", "Lisbon", "Steve"]
+marks = (100, 95, 90)
+grades = ["A+", "A", "B"]
+
+for name, marks, grade in zip(names, marks,grades):
+    print(name, marks, grade)
+
+
+# with string
+letters = "ABCD"
+numbers = (1, 2, 3, 4, 5)
+
+for letter, number in zip(letters, numbers):
+    print(letter, number)
