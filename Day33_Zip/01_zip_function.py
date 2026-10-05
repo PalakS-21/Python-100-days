@@ -41,6 +41,7 @@ for letter, number in zip(letters, numbers):
     print(letter, number)
 
 # zip() for different lengths
+# zip_longets() -> continues to longest
 from itertools import zip_longest
 
 names = ["P", "Q", "R", "S"]
@@ -48,5 +49,11 @@ nums = (7, 8, 4)
 
 for name, mark in zip_longest(names, nums, fillvalue = "N/A"):
     print(name, mark)
-    
-# zip_longets() -> continues to longest
+
+# zip() can also be used to unzip data.
+data = [("Palak", 95), ("Rhea",87), ("Jane", 88)]
+
+names, marks = zip(*data)
+
+print(names)
+print(marks)
