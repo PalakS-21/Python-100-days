@@ -14,3 +14,12 @@ marks = list(map(int, input("Enter marks separated by space: ").split()))
 result = zip(names, marks)
 
 print(list(result))
+
+# zip() with a for loop
+
+names = ["Palak","Rhea", "Jane", "Ariana" ]
+marks = [88, 79, 80]
+
+for name, mark in zip(names, marks):
+    print(name, mark)
+    print(f"{name} scored {mark} marks.")
