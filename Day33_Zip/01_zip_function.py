@@ -16,7 +16,7 @@ result = zip(names, marks)
 print(list(result))
 
 # zip() with a for loop
-
+#zip() stops at the shortest length.
 names = ["Palak","Rhea", "Jane", "Ariana" ]
 marks = [88, 79, 80]
 
@@ -39,3 +39,14 @@ numbers = (1, 2, 3, 4, 5)
 
 for letter, number in zip(letters, numbers):
     print(letter, number)
+
+# zip() for different lengths
+from itertools import zip_longest
+
+names = ["P", "Q", "R", "S"]
+nums = (7, 8, 4)
+
+for name, mark in zip_longest(names, nums, fillvalue = "N/A"):
+    print(name, mark)
+    
+# zip_longets() -> continues to longest
