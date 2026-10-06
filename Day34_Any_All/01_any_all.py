@@ -34,3 +34,18 @@ print(all(val))
 
 val = [True, True, True]
 print(all(val))
+
+# with string
+
+names = ("A", "B", "C")
+print(all(names))
+print(any(names))
+
+names = ("A", "B", "", "D")
+print(all(names)) #False bcz empty string is falsy.
+print(any(names))
+
+# empty
+print(any([])) # no truthy value -> false
+
+print(all([])) # no values is false -> true
