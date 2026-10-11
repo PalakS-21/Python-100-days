@@ -4,7 +4,7 @@ numbers = (2, 14, 6, 7, 25, 5, 9, 1, 44, 32, 11)
 
 result = sorted(numbers)
 
-print(result)
+print(result) # returns in list
 print(numbers) # original remains unchanged
 
 letters = "gfhidcabe"
@@ -55,3 +55,18 @@ names = ["Patrick", "Cho", "Christopher", "Rigsby", "Bella"]
 result = sorted(names, key = len, reverse = True)
 
 print(result)
+
+
+# with dictionary
+
+# sorting dictionary keys
+marks = {
+    "Bella": 99,
+    "Steve": 80,
+    "Ahna": 76
+}
+
+print(sorted(marks))
+
+# sorting dict values
+print(sorted(marks, key=marks.get))
