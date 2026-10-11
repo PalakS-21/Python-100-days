@@ -41,3 +41,17 @@ print(sorted(numbers, key=last_digit))
 numbers = [22, 11, 35, 43, 16, 24]
 
 print(sorted(numbers, key=lambda n: n % 10))
+
+
+# sorting in descending order -> reverse=True
+
+numbers = (30, 50, 10, 30, 20)
+
+print(sorted(numbers, reverse = True))
+
+#  key= and reverse = True
+names = ["Patrick", "Cho", "Christopher", "Rigsby", "Bella"]
+
+result = sorted(names, key = len, reverse = True)
+
+print(result)
